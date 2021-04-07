@@ -1,2 +1,4 @@
-# veterinarskaradnja
-Veterinarska Radnja zadatak za djake ETS Mija Stanimirovic
+# Veterinarska Radnja
+
+Opis zadatka se nalazi u PDF-u VeterinarskaRadnja.pdf
+
