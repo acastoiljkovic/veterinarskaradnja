@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="VeterinarskaRadnjaWeb.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Veterinarska Radnja</title>
+    <link rel="stylesheet" href="~/static/css/style.css" />
+</head>
+<body class="body">
+    <header class="header">
+        <div class="contariner center">
+                <h2>Veterinarska Radnja</h2>
+            </div>
+    </header>
+        <div class="container">
+            <main role="main" class="main">
+                <asp:ContentPlaceHolder ID="MainPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+        </div>
+    
+    <footer class="footer">
+        <div class="container center">
+            <h4>&copy; 2021 - Veterinarska Radnja - Aleksandar Stoiljkovic</h4>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,5 @@
+D:\Mija\VeterinarskaRadnja\DataLayer\bin\Debug\DataLayer.dll
+D:\Mija\VeterinarskaRadnja\DataLayer\bin\Debug\DataLayer.pdb
+D:\Mija\VeterinarskaRadnja\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+D:\Mija\VeterinarskaRadnja\DataLayer\obj\Debug\DataLayer.dll
+D:\Mija\VeterinarskaRadnja\DataLayer\obj\Debug\DataLayer.pdb

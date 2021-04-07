@@ -1,0 +1,6 @@
+D:\Mija\VeterinarskaRadnja\DataLayer\bin\Release\DataLayer.dll
+D:\Mija\VeterinarskaRadnja\DataLayer\bin\Release\DataLayer.pdb
+D:\Mija\VeterinarskaRadnja\DataLayer\obj\Release\DataLayer.csprojAssemblyReference.cache
+D:\Mija\VeterinarskaRadnja\DataLayer\obj\Release\DataLayer.csproj.CoreCompileInputs.cache
+D:\Mija\VeterinarskaRadnja\DataLayer\obj\Release\DataLayer.dll
+D:\Mija\VeterinarskaRadnja\DataLayer\obj\Release\DataLayer.pdb

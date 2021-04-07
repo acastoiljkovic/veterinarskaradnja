@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="VeterinarskaRadnja.exe" version="1.0.0.1" publicKeyToken="581a55d4d15c8611" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="VeterinarskaRadnja" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="VeterinarskaRadnja.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataLayer.dll" size="11776">
+      <assemblyIdentity name="DataLayer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EjNSpfxxO3I1xTabNZ6bvjHlBD8yJS9DhRj8Tmv5k0A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VeterinarskaRadnja.exe" size="20952">
+      <assemblyIdentity name="VeterinarskaRadnja" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hjtbpAAWoDK0cu3Q2e1Q71KwRtb3lcGL/8csoMgInQ4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="VeterinarskaRadnja.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-KGGUO5Q\Aca" issuerKeyHash="36d7c87f27eb2811a049488b7c3884c73174ff2c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>vNCmYwGmeBpbZvrrZ7PnPNQgFDisUkPCeL+OFmk13OI=</DigestValue></Reference></SignedInfo><SignatureValue>gu95NgREAhpK9rM+5g++EJAvkhtt3Nva3qjqMP/xZUK3wV/F4JOkuJFSIfDFRGwOWfScv1bpfmGmNvGNt7Y4eJoTdSTWg5OEjPv84Q3HiC19rNE329L7RoNgTpNuMTtAEXUdKDSm9vK7Xc69/jtoi19m8/YSg1bOY+422OKz+Wk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rEmWpbwGEL1j5F2zsedbn0YCJjPd/l2qJagyl24V0USi0WhPxCncaq07VyzQw7UJgHNhMm10ZpuHHA4WkEY1mFl9FgD6OSpKDYmkOqN8ERZFKJZfLFYyW6YeURpIxAqI3LwMGjQ5eboivy3W9HlJyyD3w1Vfm7PJEbBhiWNsxv0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e2dc3569168ebf78c24352ac381420d43ce7b367ebfa665b1a78a60163a6d0bc" Description="" Url=""><as:assemblyIdentity name="VeterinarskaRadnja.exe" version="1.0.0.1" publicKeyToken="581a55d4d15c8611" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-KGGUO5Q\Aca</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>G6EBpcvZNhxougFWOj9d3qTmrxODQFKbUjXFX/TynMA=</DigestValue></Reference></SignedInfo><SignatureValue>inTht+5BmpaRpHpkHP0FK2NXie8aXK9AQTVgCaM2vse1PxvjXzQZpbQhz1gwzBrIxG0gesAao0QmpU2/i0YTFOUmkNufhmE/jQojeA4rhTlGrbY/iZMZrWRaD7lAPySATN6RzDrekIxGn/oqhrPzg6EZNvcn+ED+H/99uOPfHUg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rEmWpbwGEL1j5F2zsedbn0YCJjPd/l2qJagyl24V0USi0WhPxCncaq07VyzQw7UJgHNhMm10ZpuHHA4WkEY1mFl9FgD6OSpKDYmkOqN8ERZFKJZfLFYyW6YeURpIxAqI3LwMGjQ5eboivy3W9HlJyyD3w1Vfm7PJEbBhiWNsxv0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQFs+mq5o+I55EbE5CDyflGDANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtAEsARwBHAFUATwA1AFEAXABBAGMAYTAeFw0yMTA0MDYyMTMxMTNaFw0yMjA0MDcwMzMxMTNaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0ASwBHAEcAVQBPADUAUQBcAEEAYwBhMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCsSZalvAYQvWPkXbOx51ufRgImM93+XaolqDKXbhXRRKLRaE/EKdxqrTtXLNDDtQmAc2EybXRmm4ccDhaQRjWYWX0WAPo5KkoNiaQ6o3wRFkUoll8sVjJbph5RGkjECojcvAwaNDl5uiK/Ldb0eUnLIPfDVV+bs8kRsGGJY2zG/QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAHTKSidWVxh8hLMEN13acP5Qj9cp8dTdMho/cbmHIxti1AGIpwhfeySBlnWgvJv3VqONxa2g//lM23itWiA4Ww9b7D+wQwWNzTW3sdS99JZrvnbYtSmV+cSbl1NrxNO94eXL1PKZrdGetyn/h/jSGmDLArhqnakG4yqnDD3EuIc9</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
