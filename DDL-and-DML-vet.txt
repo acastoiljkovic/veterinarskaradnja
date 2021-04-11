@@ -1,0 +1,57 @@
+drop database vet;
+create database vet;
+use vet;
+drop table Ljubimac;
+drop table Korisnik;
+drop table Veterinarska_radnja;
+create table Korisnik(
+	ID int not null primary key,
+	Ime nvarchar(20),
+	Prezime nvarchar(20),
+	Email nvarchar(50) not null,
+	Lozinka nvarchar(50) not null,
+	Tip nvarchar(20) not null
+);
+create table Ljubimac(
+	ID int not null primary key,
+	Ime nvarchar(20),
+	Tip nvarchar(20),
+	Datum_rodjenja date not null
+);
+create table Veterinarska_radnja(
+	ID int not null primary key,
+	Naziv nvarchar(20),
+	Adresa nvarchar(50),
+	Radno_vreme nvarchar(50) not null
+);
+insert into Korisnik values (1, 'Petar', 'Markovic', 'pera@mail.com','pera12345','vlasnik');
+insert into Korisnik values (2, 'Jovana', 'Kocic', 'jovana@mail.com','jovana12345','veterinar');
+insert into Korisnik values (3, 'Ivan', 'Nikolic', 'ivan@mail.com','ivan12345','administrator');
+insert into Korisnik values (4, 'Nikolina', 'Stefanovic', 'nikolina@mail.com','nikolina12345','vlasnik');
+insert into Korisnik values (5, 'Marko', 'Zivic', 'marko@mail.com','marko12345','veterinar');
+
+insert into Ljubimac values (1, 'Zuca', 'Pas', '2015-02-07');
+insert into Ljubimac values (2, 'Micko', 'Macka', '2012-11-27');
+insert into Ljubimac values (3, 'Kica', 'Papagaj', '2017-05-12');
+insert into Ljubimac values (4, 'Crni', 'Macka', '2019-12-24');
+insert into Ljubimac values (5, 'Ben', 'Pas', '2017-07-14');
+
+insert into Veterinarska_radnja values (1, 'My Pet', '9. brigade 376, Nis', '16:00 - 20:00');
+insert into Veterinarska_radnja values (2, 'Dr Pet Good', 'Vizantijski bulevar 84a, Nis', '09:00 - 20:00');
+insert into Veterinarska_radnja values (3, 'Vet Medica', 'Bulevar Mediana 5, Nis', '00:00 - 24:00');
+insert into Veterinarska_radnja values (4, 'Djura Vet', 'Bosiljke Djuric 15, Leskovac', '10:00 - 13:00,16:00 - 19:00');
+insert into Veterinarska_radnja values (5, 'Meda Vet', 'Gandijeva 115a, Beograd', '10:00 - 20:00');
+
+alter table Korisnik add vet int, constraint fk_vet foreign key (vet) references Veterinarska_radnja(ID); 
+
+alter table Ljubimac add vlasnik int, constraint fk_vlasnik foreign key (vlasnik) references Korisnik(ID);
+
+update Ljubimac set vlasnik = 1 where ID = 2;
+update Ljubimac set vlasnik = 3 where ID = 1;
+update Ljubimac set vlasnik = 1 where ID = 4;
+update Ljubimac set vlasnik = 2 where ID = 3;
+
+update Korisnik set vet = 1 where ID = 1;
+update Korisnik set vet = 3 where ID = 2;
+update Korisnik set vet = 1 where ID = 3;
+update Korisnik set vet = 4 where ID = 4;
