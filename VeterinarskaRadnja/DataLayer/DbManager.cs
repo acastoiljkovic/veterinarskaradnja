@@ -43,7 +43,6 @@ namespace DataLayer
                     korisnik.Ime = (string)reader["Ime"];
                     korisnik.Prezime = (string)reader["Prezime"];
                     korisnik.Email = (string)reader["Email"];
-                    korisnik.BrTelefona = (string)reader["Br_telefona"];
                     korisnik.Tip = (string)reader["Tip"];
                     lista.Add(korisnik);
                 }
@@ -64,7 +63,7 @@ namespace DataLayer
         public bool ulogujKorisnika(String email, String lozinka)
         {
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient
-                .SqlCommand("select Lozinka,Ime,Prezime,ID,Tip,Br_telefona,vet " +
+                .SqlCommand("select Lozinka,Ime,Prezime,ID,Tip,vet " +
                 "from Korisnik where Email = @email", connection);
             cmd.CommandType = System.Data.CommandType.Text;
             connection.Open();
@@ -84,7 +83,6 @@ namespace DataLayer
                         ulogovanKorisnik.Ime = (string)reader["Ime"];
                         ulogovanKorisnik.Prezime = (string)reader["Prezime"];
                         ulogovanKorisnik.Tip = (string)reader["Tip"];
-                        ulogovanKorisnik.BrTelefona = (string)reader["Br_telefona"];
                         ulogovanKorisnik.VetID = (int)reader["vet"];
                         return true;
                     }
